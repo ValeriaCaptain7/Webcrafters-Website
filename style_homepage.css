@@ -502,6 +502,10 @@ h2 {
     width: 35px;
 }
 
+#celsius-id, #fahrenheit-id {
+	color: #0000FF;
+}
+
 /* FAQ section - Accordion*/
 .accordions {
     max-width: 80%;
