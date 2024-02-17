@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Webcrafters | Basics of Transform</title>
+    <meta name="description" content="Understanding the Basics of CSS Transform">
+    <meta name="keywords" content="Basics, transform, CSS, property">
+    <meta name="author" content="Rocio, Isslam, Valeria">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style_pages.css">
+    </head>
+<body>
+    <div id="app">
+        <div id="app">
+            <nav class="navigation">
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="basics.html">Basics of transform</a></li>
+                    <li><a href="advanced.html">Advanced techniques</a></li>
+                    <li><a href="bestpractices.html">Best practices</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            <div class="mobile_nav">
+                <div class="sidemenu">
+                    <button @click="toggleMenu" class="sidemenu" :class="{ 'active': isOpen }">
+                    <span class="top"></span>
+                    <span class="mid"></span>
+                    <span class="bottom"></span>
+                </button>
+                <nav id="sidemenu">
+                    <div class="sidemenu_wrapper" :class="{ 'active': isOpen }">
+                      <ul class="sidemenu_list">
+                          <li><a href="../index.html" @click="closeMenu">Home</a></li>
+                          <li><a href="basics.html" @click="closeMenu">Basics of transform</a></li>
+                          <li><a href="advanced.html" @click="closeMenu">Advanced techniques</a></li>
+                          <li><a href="bestpractices.html" @click="closeMenu">Best practices</a></li>
+                          <li><a href="resources.html" @click="closeMenu">Resources</a></li>
+                        <li><a href="contact.html" @click="closeMenu">Contact</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+            <div class="search">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search..." name="search"></input>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+            </nav>
+            
+    <header>
+        <picture>
+            <source srcset="_images/logoportable.png" media="(max-width: 480px)">
+            <img src="_images/longlogo.png" alt="Webcrafters" class="logo">
+            <picture>
+        <h1>Understanding the Basics of CSS <code>Transform</code></h1>
+    </header>
+    <main>
+            <h1>Building a <strong>strong</strong> foundation</h1>
+            <p>CSS transformations play a crucial role in shaping the visual appearance of web elements. The
+                <code>transform</code> property provides a <em>set of functions</em> that allow you to
+                <strong>manipulate the position, rotation, scale, and skew of elements</strong>, unleashing creative
+                possibilities in web design.
+            </p>
+            <div class="piccontainer">
+                <img src="_images/basics.jpeg" alt="Coding" class="pic">
+                <div class="middle">
+                    <div class="pictext">Learn the basics of Transform with the Webcrafters</div>
+                </div>
+              </div>
+            <article>
+            <h2>Basic Syntax and Usage:</h2>
+            <p>Let's start with the fundamental syntax of the <code>transform</code> property. In its simplest form, you
+                apply a transformation to an element using the <code>transform</code> property in your CSS, followed by
+                the specific transformation function.</p>
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bGZdyrG" data-user="Bgcmis" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em; margin-bottom: 30px;">
+                <span>See the Pen <a href="https://codepen.io/Bgcmis/pen/bGZdyrG">
+                Transform example</a> by Isslam (<a href="https://codepen.io/Bgcmis">@Bgcmis</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+            <p>In this example, the <code>translate</code> function moves the element <b>50 pixels</b> to the right and
+                <b>100 pixels</b> down, it rotates it by <b>60 degrees</b>, it scales it by <b>x1.5</b>, and it skews it
+                along <strong>the X and Y axes.</strong>
+            </p>
+        </article>
+        <article>
+            <h3>Common Transform Functions:</h3>
+            <ol>
+                <li>
+                    <div>
+                        <h4>Translate</h4>
+                        <!--image-->
+                        <p>The <code>translate</code> function moves an element along the X and Y axes. <i>Example:</i>
+                        </p>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="wvOabPw" data-user="Bgcmis" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/Bgcmis/pen/wvOabPw">
+                            Transform - translate example</a> by Isslam (<a href="https://codepen.io/Bgcmis">@Bgcmis</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                          </p>
+                          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h4>Rotate</h4>
+                        <!--image-->
+                        <p>The <code>rotate</code> function rotates an element by a specified angle. <i>Example:</i></p>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxBGNPY" data-user="Bgcmis" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/Bgcmis/pen/xxBGNPY">
+                            Transform - rotate example</a> by Isslam (<a href="https://codepen.io/Bgcmis">@Bgcmis</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                          </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h4>Scale</h4>
+                        <!--image-->
+                        <p>The <code>scale</code> function changes the size of an element. <i>Example:</i></p>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="poYJmpE" data-user="Bgcmis" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/Bgcmis/pen/poYJmpE">
+                            Transform - scale example</a> by Isslam (<a href="https://codepen.io/Bgcmis">@Bgcmis</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                          </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h4>Skew</h4>
+                        <!--image-->
+                        <p>The <code>skew</code> function tilts an element along the X and/or Y axes. <i>Example:</i>
+                        </p>
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YzgXbYR" data-user="Bgcmis" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/Bgcmis/pen/YzgXbYR">
+                            Transform - skew example</a> by Isslam (<a href="https://codepen.io/Bgcmis">@Bgcmis</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                          </p>
+                    </div>
+                </li>
+            </ol>
+        </article>
+        <article>
+            <h2>Transform Origin:</h2>
+            <p>The <code>transform-origin</code> property defines the point around which the transformatio is applied.
+                <b>By default, it's set to the center of the element</b>, but you can <strong>customize it</strong> to
+                achieve different effects.
+            </p>
+        </article>
+    </main>
+        <section>
+        <p>Ready to elevate your skills? Explore our Advanced Techniques page to discover more intricate transformations
+            and take your web design to the next level.
+            <button role="button" class="button is-primary"><a href="advanced.html">Continue to Advanced Techniques</a></button>
+        </section>
+        <div class="sidebar"> 
+            <a href="https://www.facebook.com" alt="Facebook" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/feed/" alt="LinkedIn" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com" alt="Instagram" target="_blank" class="fa fa-instagram"></a>
+        </div>
+    <footer>
+        <div class="mark">
+            <div>
+                <img src="_images/shortlogo.png" class="footerlogo" alt="logo">
+            </div>
+            <div class="footerdiv">
+                <p><b>&copy; All rights reserved - 2024</b></p>
+                <p><i>by Isslam Belgacem, Rocio Piña and Valeria Panzetta</i></p>
+                <p>contact@webcrafters.com
+                    <br>
+                Phone: +33 00 00 00 00 00
+                    <br>
+                145 rue La Fayette, Paris 10e</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="main_pages.js"></script>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

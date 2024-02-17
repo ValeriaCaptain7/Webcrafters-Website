@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Webcrafters | Advanced Techniques</title>
+        <meta name="description" content="Mastering Advanced CSS Transform Techniques">
+        <meta name="keywords" content="Advance techniques, transform, CSS, property">
+        <meta name="author" content="Rocio, Isslam, Valeria">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style_pages.css">
+        </head>
+<body>
+    <div id="app">
+            <nav class="navigation">
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="basics.html">Basics of transform</a></li>
+                    <li><a href="advanced.html">Advanced techniques</a></li>
+                    <li><a href="bestpractices.html">Best practices</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile_nav">
+                    <div class="sidemenu">
+                        <button @click="toggleMenu" class="sidemenu" :class="{ 'active': isOpen }">
+                        <span class="top"></span>
+                        <span class="mid"></span>
+                        <span class="bottom"></span>
+                    </button>
+                    <nav id="sidemenu">
+                        <div class="sidemenu_wrapper" :class="{ 'active': isOpen }">
+                          <ul class="sidemenu_list">
+                              <li><a href="../index.html" @click="closeMenu">Home</a></li>
+                              <li><a href="basics.html" @click="closeMenu">Basics of transform</a></li>
+                              <li><a href="advanced.html" @click="closeMenu">Advanced techniques</a></li>
+                              <li><a href="bestpractices.html" @click="closeMenu">Best practices</a></li>
+                              <li><a href="resources.html" @click="closeMenu">Resources</a></li>
+                            <li><a href="contact.html" @click="closeMenu">Contact</a></li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                <div class="search">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search..." name="search"></input>
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+              </nav>
+        <header>   
+            <picture>
+                <source srcset="_images/logoportable.png" media="(max-width: 480px)">
+                <img src="_images/longlogo.png" alt="Webcrafters" class="logo">
+            <picture>
+            <h1>Mastering Advanced CSS <code>Transform</code> Techniques</h1>
+        </header>
+    <main>
+        <h1>Take your transformations to the next level</h1>
+        <div class="piccontainer">
+            <img src="_images/advanced.jpeg" alt="Advanced" class="pic">
+            <div class="middle">
+                <div class="pictext">Learn advanced techniques with the Webcrafters</div>
+            </div>
+          </div>
+            <h3>3D Transformations</h3>
+            <p>Incorporating <strong>three dimensions</strong> adds depth and perspective, enabling a <b>richer and more
+                    immersive</b> visual experience on the web. In this section, we'll explore advanced techniques that
+                extend beyond the flat plane, allowing you to create engaging and almost lifelike transformations.</p>
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="KKEpLBg" data-user="Bgcmis" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/Bgcmis/pen/KKEpLBg">
+                    Transform - perspective example</a> by Isslam (<a href="https://codepen.io/Bgcmis">@Bgcmis</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+            <p>In this example, we introduce a <strong>3D perspective</strong> to an element, accompanied by a rotation
+                along the X-axis. By incorporating the <code>perspective</code> property, we simulate depth perception,
+                giving the element a sense of distance from the viewer. The <code>rotateX</code> function further
+                enhances this effect, bringing a new dimension to the transformation.</p>
+            <p>Delving deeper into 3D transformations, new functions such as <code>translateZ</code>,
+                <code>rotateY</code>, and <code>scaleZ</code>. These functions enable you to <b>manipulate elements in
+                    three-dimensional space</b>, allowing for sophisticated transformations that go <em>beyond</em> the
+                capabilities of traditional 2D design.</p>
+    <article>
+            <h3>Transition and Animation</h3>
+            <p>Transformations are not limited to static changes. Adding <b>transitions</b> and <b>animations</b> to
+                your transformations can bring dynamism to your web pages.</p>
+            <p>Let's delve into how to smoothly transition between states and create captivating animations:</p>
+            <ul>
+                <li>
+                    <div>
+                        <b>Transitions:</b>
+                        <br>
+                        <p>With transitions, we bridge the gap between static and dynamic states. Take, for example, a
+                            simple scaling effect on hover.</p>
+                        <p>The <code>transition</code> property is employed to smoothly alter the element's scale over a
+                            specified duration, creating a visually appealing and seamless user interaction.</p>
+                            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VwRLOGq" data-user="Bgcmis" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Bgcmis/pen/VwRLOGq">
+                                Transform - transition example</a> by Isslam (<a href="https://codepen.io/Bgcmis">@Bgcmis</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <b>Keyframe Animations:</b>
+                        <br>
+                        <p>Moving beyond transitions, keyframe animations offer precise control over an element's
+                            transformation over time. In our example, we define a rotation animation using
+                            <code>@keyframes</code>.</p>
+                        <p>The element continuously rotates 360 degrees, providing a continuous motion effect. Keyframe
+                            animations are a powerful tool for creating intricate transformations that capture the
+                            user's attention.</p>
+                            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WNmvBaw" data-user="Bgcmis" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/Bgcmis/pen/WNmvBaw">
+                                Transform - keyframe example</a> by Isslam (<a href="https://codepen.io/Bgcmis">@Bgcmis</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h3>Combining Transformations</h3>
+            <p>The <em>true power</em> of CSS transformations lies in combining multiple functions to achieve complex
+                visual effects. Let's explore how to harmoniously blend different transformations for great results.</p>
+            <p>By layering <code>translate</code>, <code>rotate</code>, <code>scale</code>, and introducing
+                <code>skew</code>, you can create a <strong>captivating and multi-dimensional transformation.</strong>
+            </p>
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WNmvBaw" data-user="Bgcmis" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/Bgcmis/pen/WNmvBaw">
+                Transform - keyframe example</a> by Isslam (<a href="https://codepen.io/Bgcmis">@Bgcmis</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+            <p>In this example:</p>
+            <ul>
+                <li>The <code>perspective</code> property adds depth to the transformation, creating a sense of space.
+                </li>
+                <li>The <code>rotateX</code> imparts a subtle rotation along the X-axis.</li>
+                <li>The <code>translateY</code> moves the element upward, enhancing the dynamic effect.</li>
+                <li>The <code>scale</code> magnifies the element, contributing to the visual impact.</li>
+                <li>The <code>skewY</code> introduces a skewing effect, adding an extra layer of complexity.</li>
+            </ul>
+        </article>
+    </main>
+        <section>
+            <p>As you embark on your exploration of combined transformations, it's essential to grasp the best practices.
+            Understanding the order of transformation functions, experimenting with different combinations, and
+            considering their impact on performance are key factors.</p>
+            <button role="button" class="button is-primary"><a href="bestpractices.html">Continue to Best Practices</a></button>
+        </section>
+    <div class="sidebar"> 
+        <a href="https://www.facebook.com" alt="Facebook" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/feed/" alt="LinkedIn" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com" alt="Instagram" target="_blank" class="fa fa-instagram"></a>
+    </div>
+<footer>
+    <div class="mark">
+        <div>
+            <img src="_images/shortlogo.png" class="footerlogo" alt="logo">
+        </div>
+        <div class="footerdiv">
+            <p><b>&copy; All rights reserved - 2024</b></p>
+            <p><i>by Isslam Belgacem, Rocio Piña and Valeria Panzetta</i></p>
+            <p>contact@webcrafters.com
+                <br>
+            Phone: +33 00 00 00 00 00
+                <br>
+            145 rue La Fayette, Paris 10e</p>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="main_pages.js"></script>
+</body>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+</html>

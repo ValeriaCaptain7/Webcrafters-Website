@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Webcrafters | Resources</title>
+        <meta name="description" content="CSS Transform Resources hub">
+        <meta name="keywords" content="resources, transform, CSS, property">
+        <meta name="author" content="Rocio, Isslam, Valeria">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style_pages.css">
+        </head>
+    
+<body>
+    <div id="app">
+        <nav class="navigation">
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="basics.html">Basics of transform</a></li>
+                <li><a href="advanced.html">Advanced techniques</a></li>
+                <li><a href="bestpractices.html">Best practices</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile_nav">
+                <div class="sidemenu">
+                    <button @click="toggleMenu" class="sidemenu" :class="{ 'active': isOpen }">
+                    <span class="top"></span>
+                    <span class="mid"></span>
+                    <span class="bottom"></span>
+                </button>
+                <nav id="sidemenu">
+                    <div class="sidemenu_wrapper" :class="{ 'active': isOpen }">
+                      <ul class="sidemenu_list">
+                          <li><a href="../index.html" @click="closeMenu">Home</a></li>
+                          <li><a href="basics.html" @click="closeMenu">Basics of transform</a></li>
+                          <li><a href="advanced.html" @click="closeMenu">Advanced techniques</a></li>
+                          <li><a href="bestpractices.html" @click="closeMenu">Best practices</a></li>
+                          <li><a href="resources.html" @click="closeMenu">Resources</a></li>
+                        <li><a href="contact.html" @click="closeMenu">Contact</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+            <div class="search">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search..." name="search"></input>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+          </nav>
+    <header>
+     <picture>
+                <source srcset="_images/logoportable.png" media="(max-width: 480px)">
+                <img src="_images/longlogo.png" alt="Webcrafters" class="logo">
+                <picture>
+            <h1>CSS <code>Transform</code> Resources</h1>
+        </header>
+        <main>
+            <h1>Further Reading and Tools</h1>
+            <p style="text-align: center">Welcome to Our Resources Hub! Find guides, tutorials, and recommended readings tailored to both beginners and seasoned developers.</p>
+            <div class="piccontainer">
+                <img src="_images/resources.jpeg" alt="Resources" class="pic">
+                <div class="middle">
+                    <div class="pictext">A great Resources Hub by the Webcrafters</div>
+                </div>
+              </div>
+        <article>
+            <h2>Video Tutorials:</h2>
+            <ul>
+                <li>
+                    <p><strong>CSS Transforms: The Old, the New, and the Remarkable</strong></p>
+                    <iframe src="https://www.youtube.com/embed/frqd9y36PIA?si=lxn5qdG2JLqhy9Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>In this video, you’ll discover different ways to use the translate, scale, rotate, skew, and transform-origin properties.</p>
+                </li>
+                <li>
+                    <p><strong>Master CSS transforms and perspective - Explained Visually</strong></p>
+                    <iframe src="https://www.youtube.com/embed/niwUUtgn4-o?si=CG18maXmjvUShcGa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>This video is perfect for visual learners; it uses clear visual representation to help understand the CSS Perspective feature.</p>
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h2>Recommended Readings:</h2>
+            <ul>
+                <li>
+                    <p><strong>Transform - CSS: Cascading Style Sheets - MDN Docs</strong></p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target="_blank" rel="noopener noreferrer" class="next_a">Read the Documentation</a>
+                </li>
+                <li>
+                    <p><strong>A complete Guide to CSS Transform and CSS Transition</strong></p>
+                    <a href="https://medium.com/@nimritee876/a-complete-guide-to-css-transform-and-css-transition-919a2ab025b6" target="_blank" rel="noopener noreferrer" class="next_a">Read the Article</a>
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h2>Code Snippets:</h2>
+            <ul>
+                <li>
+                    <p><strong>Navigation list item hover and focus effect:</strong> this code snippet creates a custom hover and focus effect for navigation items, using CSS transformations.</p>
+                    <a href="https://www.30secondsofcode.org/css/s/navigation-list-item-hover-and-focus-effect/" target="_blank" rel="noopener noreferrer" class="next_a">View the Example</a>
+                </li>
+                <li>
+                    <p><strong>Perspective transform on hover:</strong> this code snippet applies a perspective transform with a hover animation to an element.</p>
+                    <a href="https://www.30secondsofcode.org/css/s/hover-perspective/" target="_blank" rel="noopener noreferrer" class="next_a">View the Example</a>
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h2>Tools:</h2>
+            <ul>
+                <li>
+                    <p><strong>CSS Surgeon - Codepip:</strong> this is a game that introduces the fundamentals of using CSS transform to modify elements on a webpage.</p>
+                    <a href="https://codepip.com/games/css-surgeon/" target="_blank" rel="noopener noreferrer" class="next_a">Play the Game</a>
+                </li>
+                <li>
+                    <p><strong>CSS3 Transform Code Generator:</strong> this tool allows you to quickly generate and copy code for CSS3 Transforms by directly interacting with the element.</p>
+                    <a href="https://www.toptal.com/developers/css3maker/css3-transform" target="_blank" rel="noopener noreferrer" class="next_a">Use the CSS3 Transform Code Generator</a>
+                </li>
+            </ul>
+        </article>
+    </main>
+        <section>
+            <h2>Community Forums:</h2>
+            <ul>
+                <li>
+                    <p><strong><a href="https://forum.bricksbuilder.io" target="_blank" rel="noopener noreferrer" class="next_a">Bricks Community Forum</a></strong></p>
+                </li>
+                <li>
+                    <p><strong><a href="https://forum.freecodecamp.org" target="_blank" rel="noopener noreferrer" class="next_a">The freeCodeCamp Forum</a></strong></p>
+                </li>
+            </ul>
+            <p>These are links to forums and communities where you and other users can discuss and ask questions about CSS transformations. Join the conversation in these collaborative spaces!</p>
+        </section>
+        <div class="sidebar"> 
+            <a href="https://www.facebook.com" alt="Facebook" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/feed/" alt="LinkedIn" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com" alt="Instagram" target="_blank" class="fa fa-instagram"></a>
+        </div>
+    <footer>
+            <div class="mark">
+            <div>
+                <img src="_images/shortlogo.png" class="footerlogo" alt="logo">
+            </div>
+            <div class="footerdiv">
+                <p><b>&copy; All rights reserved - 2024</b></p>
+                <p><i>by Isslam Belgacem, Rocio Piña and Valeria Panzetta</i></p>
+                <p>contact@webcrafters.com
+                    <br>
+                Phone: +33 00 00 00 00 00
+                    <br>
+                145 rue La Fayette, Paris 10e</p>
+            </div>
+        </div>
+    </footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="main_pages.js"></script>
+</body>
+</html>
